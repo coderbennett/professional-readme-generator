@@ -1,7 +1,17 @@
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    "What is the title of your project?",
+    "Please give a description of your project.",
+    "How does someone install your project?",
+    "How is your project used?",
+    "Which license are you using?",
+    "What are your contribution guidelines?",
+    "What are the testing instructions?",
+    "What is your GitHub username?",
+    "What is your email?"
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
