@@ -53,10 +53,76 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+
+
+
+    fs.appendFile(fileName, data.title, (err) =>
+        err
+            ? console.error(err)
+            : console.log(`${data.title} was logged to GENERATED.md`));
+
+    fs.appendFile(fileName, data.description, (err) =>
+        err
+            ? console.error(err)
+            : console.log(`${data.description} was logged to GENERATED.md`));
+
+    fs.appendFile(fileName, data.installation, (err) =>
+        err
+            ? console.error(err)
+            : console.log(`${data.installation} was logged to GENERATED.md`));
+            
+    fs.appendFile(fileName, data.usage, (err) =>
+        err
+            ? console.error(err)
+            : console.log(`${data.usage} was logged to GENERATED.md`));
+
+    fs.appendFile(fileName, data.license, (err) =>
+        err
+            ? console.error(err)
+            : console.log(`${data.license} was logged to GENERATED.md`));
+
+    fs.appendFile(fileName, data.contribution, (err) =>
+        err
+            ? console.error(err)
+            : console.log(`${data.contribution} was logged to GENERATED.md`));
+
+    fs.appendFile(fileName, data.tests, (err) =>
+        err
+            ? console.error(err)
+            : console.log(`${data.tests} was logged to GENERATED.md`));
+
+    fs.appendFile(fileName, data.username, (err) =>
+        err
+            ? console.error(err)
+            : console.log(`${data.username} was logged to GENERATED.md`));
+
+    fs.appendFile(fileName, data.email, (err) =>
+        err
+            ? console.error(err)
+            : console.log(`${data.email} was logged to GENERATED.md`));
+     
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then((response) => {
+            let responses = {};
+            responses.title = response.title;
+            responses.description = response.description;
+            responses.installation = response.installation;
+            responses.usage = response.usage;
+            responses.license = response.license;
+            responses.contribution = response.contribution;
+            responses.tests = response.tests;
+            responses.username = response.username;
+            responses.email = response.email;
+            writeToFile("GENERATED.md", responses);
+        })
+
+    
+}
 
 // Function call to initialize app
 init();
