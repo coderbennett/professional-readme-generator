@@ -36,7 +36,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `${renderLicenseBadge(license)}\nThis project is available under the ${license} license. For licensing details see [LICENSE](${renderLicenseLink(license)}).`
+    return `This project is available under the ${license} license. For licensing details see [LICENSE](${renderLicenseLink(license)}).`
   } else {
     return '';
   }
@@ -45,6 +45,8 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# **${data.title}**
+---
+${renderLicenseBadge(data.license)}
 
 ## **Table of Contents**
 ---
