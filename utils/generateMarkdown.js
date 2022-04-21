@@ -78,7 +78,7 @@ ${data.tests}
 
 ## **Author**
 ---
-${data.username}
+The author of this project is ${data.username}. If you would like to see more projects they have worked on you should visit their GitHub profile [here](https://github.com/${data.username}).
 
 ## **License**
 
