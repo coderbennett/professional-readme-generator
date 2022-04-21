@@ -1,1 +1,38 @@
-The Best Project EverThis project was built with everything you could ever want. All the best things just for you.To install this project you just click the install button.MITThis project is used however you would like.
+# **${data.title}**
+
+## **Table of Contents**
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contributions](#contributions)
+6. [Tests](#tests)
+7. [Author](#author)
+
+## **Description**
+
+`${data.description}`
+
+## **Installation**
+
+`${data.installation}`
+
+## **Usage**
+
+`${data.usage}`
+
+## **License**
+
+`${data.license}`
+
+## **Contributions**
+
+`${data.contributions}`
+
+## **Tests**
+
+`${data.tests}`
+
+## **Author**
+
+`${data.username}`
