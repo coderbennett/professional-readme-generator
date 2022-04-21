@@ -36,7 +36,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `${renderLicenseBadge(license)}\nThis project is available under the ${license}. For licensing details see [LICENSE](${renderLicenseLink(license)}).`
+    return `${renderLicenseBadge(license)}\nThis project is available under the ${license} license. For licensing details see [LICENSE](${renderLicenseLink(license)}).`
   } else {
     return '';
   }
@@ -70,7 +70,7 @@ ${data.usage}
 
 ## **Contributions**
 ---
-${data.contribution}
+${data.contributions}
 
 ## **Tests**
 ---
@@ -79,6 +79,8 @@ ${data.tests}
 ## **Author**
 ---
 The author of this project is ${data.username}. If you would like to see more projects they have worked on you should visit their GitHub profile [here](https://github.com/${data.username}).
+
+If you would like to reach ${data.username} through email you can reach them [here](mailto:${data.email}).
 
 ## **License**
 

@@ -26,9 +26,10 @@ const questions = [
         name: "usage"
     },
     {
-        type: "input",
+        type: "list",
         message: "Which license are you using?",
-        name: "license"
+        name: "license",
+        choices: ["MIT", new inquirer.Separator(), "ISC", new inquirer.Separator(), "IPL", new inquirer.Separator(), "MPL"]
     },
     {
         type: "input",
@@ -69,7 +70,7 @@ function init() {
             responses.installation = response.installation;
             responses.usage = response.usage;
             responses.license = response.license;
-            responses.contribution = response.contribution;
+            responses.contributions = response.contributions;
             responses.tests = response.tests;
             responses.username = response.username;
             responses.email = response.email;
