@@ -28,6 +28,12 @@ From this point forward you will be prompted with questions about your project. 
 
 Once you have completed your README question prompts, you will find your newly generated README markdown file named 'GENERATED.md' in the main directory.
 
+---
+
+[![Tutorial video on Professional README Generator](https://img.youtube.com/vi/EA_twGpiIw8/0.jpg)](https://www.youtube.com/watch?v=EA_twGpiIw8)
+
+If you would like to watch a video on how to use this project there is a video linked above.
+
 ## **Credits**
 ---
 This project would not be possible without [Node.js](https://nodejs.org/en/).
