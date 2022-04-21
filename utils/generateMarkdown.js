@@ -54,7 +54,7 @@ function generateMarkdown(data) {
 4. [License](#license)
 5. [Contributions](#contributions)
 6. [Tests](#tests)
-7. [Author](#author)
+7. [Questions](#questions)
 
 ## **Description**
 ---
@@ -76,7 +76,7 @@ ${data.contributions}
 ---
 ${data.tests}
 
-## **Author**
+## **Questions**
 ---
 The author of this project is ${data.username}. If you would like to see more projects they have worked on you should visit their GitHub profile [here](https://github.com/${data.username}).
 
