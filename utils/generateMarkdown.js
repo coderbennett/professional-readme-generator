@@ -3,13 +3,13 @@
 function renderLicenseBadge(license) {
   switch (license) {
       case 'MIT':
-        return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]';
+        return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
       case 'ISC':
-        return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]';
+        return '![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)';
       case 'IPL':
-        return '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)]';
+        return '![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)';
       case 'MPL':
-        return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]';
+        return '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)';
       default:
         return '';
   }
